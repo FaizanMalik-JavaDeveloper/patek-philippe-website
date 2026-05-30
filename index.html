@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patek Philippe Watches</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cart-icon" onclick="openCart()">
+      🛒 Cart (<span id="cartCount">0</span>)
+    </div>
+
+    <div class="Top">
+      <h1>PATEK PHILIPPE</h1>
+
+      <p class="tagline">Timeless Luxury • Swiss Excellence Since 1839</p>
+
+      <img src="/all pics/main.avif" alt="Patek Philippe Banner" />
+    </div>
+
+    <h2>Recent Models</h2>
+
+    <div class="Main">
+      <div class="Sub">
+        <img
+          src="/all pics/recent models 1.jpg"
+          alt="Watch"
+          onclick="
+            showDetails(
+              'Nautilus 5711',
+              '$35,000',
+              'Sport Collection',
+              'Iconic luxury sports watch with a rounded octagonal bezel and elegant design.',
+            )
+          "
+        />
+        <button onclick="addToCart('Nautilus 5711')">Add to Cart</button>
+      </div>
+
+      <div class="Sub">
+        <img
+          src="/all pics/recent models 2.webp"
+          alt="Watch"
+          onclick="
+            showDetails(
+              'Aquanaut 5167A',
+              '$28,000',
+              'Aquanaut Collection',
+              'Modern sporty luxury watch introduced in 1997 with a tropical strap.',
+            )
+          "
+        />
+        <button onclick="addToCart('Aquanaut 5167A')">Add to Cart</button>
+      </div>
+
+      <div class="Sub">
+        <img
+          src="/all pics/recent models 3.webp"
+          alt="Watch"
+          onclick="
+            showDetails(
+              'Calatrava 6119G',
+              '$32,000',
+              'Calatrava Collection',
+              'Timeless dress watch known for simplicity and Swiss craftsmanship.',
+            )
+          "
+        />
+        <button onclick="addToCart('Calatrava 6119G')">Add to Cart</button>
+      </div>
+
+      <div class="Sub">
+        <img
+          src="/all pics/recent models 4.jpg"
+          alt="Watch"
+          onclick="
+            showDetails(
+              'Cubitus',
+              '$45,000',
+              'Modern Collection',
+              'One of the newest Patek Philippe collections with a bold square-inspired design.',
+            )
+          "
+        />
+        <button onclick="addToCart('Cubitus')">Add to Cart</button>
+      </div>
+
+      <div class="Sub">
+        <img
+          src="/all pics/recent models 5.webp"
+          alt="Watch"
+          onclick="
+            showDetails(
+              'Complications',
+              '$52,000',
+              'Complications Collection',
+              'Elegant watches featuring advanced horological complications.',
+            )
+          "
+        />
+        <button onclick="addToCart('Complications')">Add to Cart</button>
+      </div>
+    </div>
+
+    <h2>Classic Models</h2>
+
+    <div class="Main">
+      <div class="Sub">
+        <img
+          src="/all pics/classics model 1.jpg"
+          alt="Watch"
+          onclick="
+            showDetails(
+              'Grand Complications',
+              '$650,000',
+              'Grand Complications',
+              'The pinnacle of Swiss watchmaking with perpetual calendars and minute repeaters.',
+            )
+          "
+        />
+        <button onclick="addToCart('Grand Complications')">Add to Cart</button>
+      </div>
+
+      <div class="Sub">
+        <img
+          src="/all pics/classic model 2.jpg"
+          alt="Watch"
+          onclick="
+            showDetails(
+              'Golden Ellipse',
+              '$40,000',
+              'Golden Ellipse Collection',
+              'Elegant watch inspired by the golden ratio.',
+            )
+          "
+        />
+        <button onclick="addToCart('Golden Ellipse')">Add to Cart</button>
+      </div>
+
+      <div class="Sub">
+        <img
+          src="/all pics/classic model 3.webp"
+          alt="Watch"
+          onclick="
+            showDetails(
+              'Twenty~4',
+              '$18,000',
+              'Ladies Collection',
+              'Luxury watch designed for modern women.',
+            )
+          "
+        />
+        <button onclick="addToCart('Twenty~4')">Add to Cart</button>
+      </div>
+
+      <div class="Sub">
+        <img
+          src="/all pics/classic model 4.webp"
+          alt="Watch"
+          onclick="
+            showDetails(
+              'Gondolo',
+              '$25,000',
+              'Art Deco Collection',
+              'Elegant rectangular case inspired by Art Deco styling.',
+            )
+          "
+        />
+        <button onclick="addToCart('Gondolo')">Add to Cart</button>
+      </div>
+
+      <div class="Sub">
+        <img
+          src="/all pics/classic model 5.jpg"
+          alt="Watch"
+          onclick="
+            showDetails(
+              'World Time 5230P',
+              '$60,000',
+              'World Time Collection',
+              'Displays multiple world time zones simultaneously.',
+            )
+          "
+        />
+        <button onclick="addToCart('World Time 5230P')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div id="watchModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2 id="watchName"></h2>
+
+        <p><strong>Price:</strong> <span id="watchPrice"></span></p>
+
+        <p><strong>Collection:</strong> <span id="watchCollection"></span></p>
+
+        <p id="watchDescription"></p>
+      </div>
+    </div>
+
+    <div id="cartModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeCart()">&times;</span>
+
+        <h2>Your Cart</h2>
+
+        <ul id="cartItems"></ul>
+      </div>
+    </div>
+
+    <footer>
+      <h3>Patek Philippe Collection</h3>
+      <p>contact@patekphilippe.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
